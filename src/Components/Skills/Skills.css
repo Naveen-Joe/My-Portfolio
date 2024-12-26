@@ -1,0 +1,109 @@
+.skill{
+    padding: 1rem;
+    margin-top: 2rem;
+    z-index: 5;
+    width: 100%;
+    overflow: hidden;
+}
+.skill-0{
+    margin-top: 1rem;
+    z-index: -1;
+    overflow: hidden;
+}
+.s-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   z-index: -1;
+   overflow: hidden;
+}
+.skill img{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border-radius:80px;
+    border: 2px solid orange;
+    box-shadow: 0 0 20px  orangered;
+    overflow: hidden;
+    z-index: -1;
+}
+.skill-1{
+    z-index: -1;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+    text-align: center;
+}
+.skill span:nth-of-type(1)
+{
+    font-size: 2rem;
+}
+.skill span:nth-of-type(2){
+    font-size: 2rem;
+    color: orangered;
+}
+.skill-1 h1{
+    font-size: 14px;
+    color: grey;
+    margin-top: 1.5rem;
+}
+.skill-1 img:hover{
+    transform: scale(1.1);
+    transition-duration: .5s;
+    box-shadow: 0 0 30px orangered;
+    overflow: hidden;
+    opacity: 1px;
+    filter: brightness(10px);
+}
+.s-container{
+    box-shadow: 10px 0  10px white;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX();
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.skill-1{
+    perspective: 100px;
+    animation: scroll 40s linear infinite;
+}
+.top{
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 4px;
+    background-color:orange;
+    box-shadow:4px 8px 16px 5px orange;
+    animation: line 40s ease-in-out infinite;
+}
+
+.bottom{
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 4px;
+    background-color:orange;
+    box-shadow:0px -5px 15px 5px orange;
+    margin-top: 17rem;
+}
+@media screen and (max-width: 480px){
+    #Skills{
+       margin-top: -300px;
+    }
+    .skill-1 img{
+        margin-top:-50px;
+        width:70px;
+        height: 70px;
+    }
+    .skill-1 {
+        margin-right:-70px;
+    }
+}
